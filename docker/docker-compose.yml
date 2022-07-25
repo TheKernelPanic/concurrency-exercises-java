@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  java_environment:
+    build: .
+    image: java_environment:latest
+    container_name: java_environment_sandbox
+    volumes:
+      - ../:/usr/src/environment
+    tty: true
